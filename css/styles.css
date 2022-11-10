@@ -1,0 +1,75 @@
+:root {
+    --button: #2196F3;
+    --header: #212121;
+    --text: #757575; 
+    --footer: rgba(255, 255, 255, 0.6);
+    --white-color: #FFFFFF;
+
+}
+/* Цвет наведения и кнопок  #2196F3 */
+/* Цвет заголовков  #212121 */
+/* Цвет основного текста  #757575 */
+/* Текст в футере rgba(255, 255, 255, 0.6) */
+/* Кусок лого и некоторые заголовки   #FFFFFF */
+
+
+
+/* Основные цвета и тех команды */
+nav {
+    color: #212121;
+}
+main {
+    color: var(--text);
+}
+.listoff {
+    list-style: none;
+}
+
+
+
+/* Заголовок(часть Веб) */
+.accent {
+    color: var(--button)
+}
+
+
+
+/* Голова */
+.header-link .link {
+    color: var(--header);  
+}
+.header-link .link:hover,
+.header-link .link:focus {
+    color: var(--button)
+}
+
+
+
+/* main body */
+.section .button {
+    background-color: var(--button) ;
+    color: var(--white-color)
+}
+.section .header-header {
+    color: var(--white-color);
+}
+
+.list .main-header {
+    color: var(--header);
+}
+.section .main-header {
+    color: var(--header);
+}
+
+
+/* Футер */
+.footer .text-footer {
+    color: var(--white-color);
+}
+.footer .a-footer {
+    color: var(--footer);
+}
+.footer .a-footer:hover,
+.footer .a-footer:focus {
+    color: var(--button);
+}
