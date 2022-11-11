@@ -6,6 +6,9 @@
     --white-color: #FFFFFF;
 
 }
+a {
+    text-decoration: none;
+}
 /* Цвет наведения и кнопок  #2196F3 */
 /* Цвет заголовков  #212121 */
 /* Цвет основного текста  #757575 */
@@ -25,9 +28,9 @@ main {
     list-style: none;
 }
 .logo a {
-    text-decoration: none;
     color: black;
 }
+
 
 
 /* Цвета для оформления Лого */
@@ -87,5 +90,9 @@ main {
 }
 .footer .a-footer:hover,
 .footer .a-footer:focus {
+    color: var(--button);
+}
+
+.current {
     color: var(--button);
 }
