@@ -16,7 +16,7 @@
 
 /* Основные цвета и тех команды */
 nav {
-    color: #212121;
+    color: var(--header);
 }
 main {
     color: var(--text);
@@ -27,9 +27,12 @@ main {
 
 
 
-/* Заголовок(часть Веб) */
+/* Цвета для оформления Лого */
 .accent {
     color: var(--button)
+}
+.accentw {
+    color: var(--white-color);
 }
 
 
@@ -46,10 +49,19 @@ main {
 
 
 /* main body */
+
+/* button */
 .section .button {
     background-color: var(--button) ;
     color: var(--white-color)
 }
+.section .buttonh:hover,
+.section .buttonh:focus {
+    background-color: var(--button) ;
+    color: var(--white-color)
+}
+
+
 .section .header-header {
     color: var(--white-color);
 }
@@ -60,6 +72,7 @@ main {
 .section .main-header {
     color: var(--header);
 }
+
 
 
 /* Футер */
