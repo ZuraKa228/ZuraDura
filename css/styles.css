@@ -28,17 +28,27 @@ main {
     list-style: none;
 }
 .logo a {
-    color: black;
+color: black;
 }
 
 
 
 /* Цвета для оформления Лого */
 .accent {
-    color: var(--button)
+    color: var(--button);
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
 }
 .accentw {
     color: var(--white-color);
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
 }
 
 

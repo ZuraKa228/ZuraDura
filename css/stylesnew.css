@@ -1,0 +1,37 @@
+:root {
+    --button: #2196F3;
+    --header: #212121;
+    --text: #757575; 
+    --footer: rgba(255, 255, 255, 0.6);
+    --white-color: #FFFFFF;
+
+}
+a {
+    text-decoration: none;
+}
+/* Цвет наведения и кнопок  #2196F3 */
+/* Цвет заголовков  #212121 */
+/* Цвет основного текста  #757575 */
+/* Текст в футере rgba(255, 255, 255, 0.6) */
+/* Кусок лого и некоторые заголовки   #FFFFFF */
+
+
+
+/* Основные цвета и тех команды */
+body {
+    color: var(--text);
+}
+.listoff {
+    list-style: none;
+}
+
+
+/* Logo */
+.accent {
+    color: var(--button);
+}
+
+/* header */
+.nav-color {
+    color: var(--header);
+}
