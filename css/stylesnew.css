@@ -116,6 +116,7 @@ margin-right: 0px;
 .address .link-header:hover,
 .address .link-header:focus {
     color: var(--button);
+    fill: var(--button);
 }
 .link-header {
 display: block;
@@ -130,10 +131,21 @@ letter-spacing: 0.02em;
 .header-icon{
     color: var(--text);
     fill: var(--text);
+}
+.mail-icon{
     width: 16px;
     height: 12px;
+    margin-right: 10px;
 }
-
+.tel-icon{
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+}
+.address-ul .link-header{
+    color: var(--text);
+    fill: var(--text);
+}
 
 .nav {
     display: flex;
@@ -155,22 +167,14 @@ letter-spacing: 0.02em;
     display: flex;
     margin-right: 215px;
     align-items: center;
+
+    color: var(--text);
+    fill: var(--text);
 }
 .address-ul .item + .item{
     margin-left: 50px;
 }
 
-
-.tel::before{
-content:'';
-width: 10px;
-height: 16px;
-background-image: url(../images/tel.svg);
-
-display: inline-block;
-margin-right: 10px;
-align-items: center;
-}
 
 
 /* main */
