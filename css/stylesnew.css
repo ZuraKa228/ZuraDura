@@ -127,6 +127,12 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 }
+.header-icon{
+    color: var(--text);
+    fill: var(--text);
+    width: 16px;
+    height: 12px;
+}
 
 .nav {
     display: flex;
