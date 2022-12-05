@@ -6,7 +6,8 @@
     --link-list: rgba(255, 255, 255, 0.1);
     --white-color: #FFFFFF;
     --bgc: #2F303A;
-    --mess: rgba(175, 177, 184, 1)
+    --mess: rgba(175, 177, 184, 1);
+    --job: rgba(47, 48, 58, 0.8);
 
 
 }
@@ -37,9 +38,41 @@ footer {
 .bgc {
     background-color: var(--bgc)
 }
+
 .current {
     color: var(--button)
 }
+.current::after{
+content:'';
+width: 48px;
+height: 4px;
+display: block;
+background-position: bottom;
+position: absolute;
+left: 492px;
+top: 76px;
+
+border-radius: 4px;
+background-color: var(--button);
+}
+.current-p {
+    color: var(--button)
+}
+.current-p::after{
+position: absolute;
+content:'';
+width: 78px;
+height: 4px;
+display: block;
+background-position: bottom;
+left: 585px;
+top: 76px;
+
+border-radius: 2px;
+background-color: var(--button);
+}
+
+
 h1 {
 font-weight: 900;
 font-size: 44px;
@@ -117,6 +150,8 @@ margin-right: 0px;
 .address .link-header:focus {
     color: var(--button);
     fill: var(--button);
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-header {
 display: block;
@@ -148,6 +183,7 @@ letter-spacing: 0.02em;
 }
 
 .nav {
+    position: relative;
     display: flex;
     align-items: center;
 }
@@ -251,10 +287,14 @@ letter-spacing: 0.02em;
 }
 .list .buttonh:hover,
 .list .buttonh:focus {
+cursor: pointer;
 background-color: var(--button);
 color: var(--white-color);
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 border-radius: 4px;
+
+transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buttons{
     font-weight: 500;
@@ -296,6 +336,8 @@ border: none;
     cursor: pointer;
     border: 1px solid var(--button);
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-index { 
@@ -315,14 +357,39 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     text-align: center;
 }
 .job-ul {
+    position: relative;
     display: flex;
     justify-content: center;
     margin: 50px 0 94px;
     padding: 0;
+    min-height: 300px;
 }
 .job-ul .item:not(:last-child){
 margin-right: 30px;
 }
+.job-item{
+    position: relative;
+    width: 370px;
+    height: 70px;
+}
+.job-p {
+position: absolute;
+background-color: var(--job);
+color: var(--white-color);
+width: 370px;
+height: 70px;
+
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-align: center;
+text-transform: uppercase;
+}
+.job-p-ul{
+    display: flex;
+}
+
 
 .text-portfolio {
 font-weight: 400;
@@ -334,8 +401,8 @@ letter-spacing: 0.03em;
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
-text-align: center;
 letter-spacing: 0.03em;
+text-align: center;
 
 margin-top: 118px;
 margin-bottom: 50px;
@@ -378,7 +445,10 @@ border: 1px solid #EEEEEE;
 }
 .panel-item:hover,
 .panel-item:focus{
+cursor: pointer;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+transition: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .panel .panel-item{
     margin-right: 30px;
@@ -423,8 +493,11 @@ margin-right: 32px;
 
 .mess-button:hover,
 .mess-button:focus{
+    cursor: pointer;
     background-color:var(--button);
     fill: var(--white-color);
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comp {
@@ -440,6 +513,9 @@ padding: 0;
 .comp:focus{
 border: 1px solid var(--button);
 fill: var(--button);
+transition: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+cursor: pointer;
 }
 .comp-list {
     fill: var(--text);
@@ -471,7 +547,9 @@ margin-right: 30px;
 }
 .address .link-footer:hover,
 .address .link-footer:focus {
-    color: var(--button)
+    color: var(--button);
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .text-address {
 font-weight: 400;
@@ -550,19 +628,31 @@ padding: 12px;
 }
 .link-list .inst:hover,
 .link-list .inst:focus{
-background-color:var(--button)
+cursor: pointer;
+background-color:var(--button);
+transition: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-list .twit:hover,
 .link-list .twit:focus{
-background-color:var(--button)
+cursor: pointer;
+background-color:var(--button);
+transition: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-list .face:hover,
 .link-list .face:focus{
-background-color:var(--button)
+cursor: pointer;
+background-color:var(--button);
+transition: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-list .in:hover,
 .link-list .in:focus{
-background-color:var(--button)
+cursor: pointer;
+background-color:var(--button);
+transition: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer{
     display: flex;
