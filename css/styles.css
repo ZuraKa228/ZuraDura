@@ -150,8 +150,8 @@ margin-right: 0px;
 .address .link-header:focus {
     color: var(--button);
     fill: var(--button);
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .link-header {
 display: block;
@@ -162,6 +162,10 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
+
+transition-property: all;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-icon{
     color: var(--text);
@@ -305,6 +309,10 @@ transition: 250ms;
 
     border: none;
     padding: 6px 25px;
+
+transition-property: all;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-list{
 display: flex;
@@ -331,6 +339,10 @@ padding: 10px 32px;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 border: none;
+
+transition-property: all;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buttoni:hover{
     cursor: pointer;
@@ -357,7 +369,7 @@ transition: 250ms;
     text-align: center;
 }
 .job-ul {
-    position: relative;
+    /* position: relative; */
     display: flex;
     justify-content: center;
     margin: 50px 0 94px;
@@ -368,9 +380,14 @@ transition: 250ms;
 margin-right: 30px;
 }
 .job-item{
+    cursor: pointer;
     position: relative;
     width: 370px;
     height: 70px;
+
+    transition-property: all;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .job-p {
 position: absolute;
@@ -378,6 +395,10 @@ background-color: var(--job);
 color: var(--white-color);
 width: 370px;
 height: 70px;
+bottom: -224px;
+left: 0;
+margin: 0;
+padding-top: 27px;
 
 font-weight: 700;
 font-size: 14px;
@@ -385,9 +406,22 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-align: center;
 text-transform: uppercase;
+
+transition-property: all;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.job-item:hover .job-p{
+opacity: 1;
+transition: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+cursor: pointer;
 }
 .job-p-ul{
     display: flex;
+}
+.job-item .job-p{
+opacity: 0;
 }
 
 
@@ -397,6 +431,44 @@ font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.03em;
 }
+.text-portfolio-p{
+    position: absolute;
+    opacity: 0;
+    color: var(--white-color);
+    background-color: rgba(33, 150, 243, 0.9);
+    text-align: left;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    
+    width: 372px;
+    height: 294px;
+    padding: 63px 24px;
+    margin: 0;
+    left: 0;
+    top: 110px;
+transition-property: all;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* .text-portfolio-hover{
+    
+position: absolute;
+} */
+
+.panel-item:hover .text-portfolio-hover{
+opacity: 1;
+/* transition: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+width: 371px;
+height: 294px;
+padding: 63px 24px;
+margin: 0;
+left: 0;
+top: 0;
+}
+
+
 .text-h {
 font-weight: 700;
 font-size: 36px;
@@ -440,8 +512,13 @@ background-color: var(--white-color)
     margin: 0;
 }
 .panel-item{
+    position: relative;
 background-color: var(--white-color);
 border: 1px solid #EEEEEE;
+
+transition-property: all;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .panel-item:hover,
 .panel-item:focus{
@@ -483,6 +560,10 @@ margin: 20px 24px 4px;
 
     border-radius: 30px;
     border:none;
+
+    transition-property: all;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .first{
     margin-left: 32px;
@@ -508,6 +589,10 @@ width: 170px;
 height: 92px;
 margin: 0;
 padding: 0;
+
+transition-property: all;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comp:hover,
 .comp:focus{
@@ -543,7 +628,11 @@ margin-right: 30px;
     color: var(--white-color)
 }
 .address .link-footer {
-    color: var(--footer)
+    color: var(--footer);
+
+transition-property: all;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address .link-footer:hover,
 .address .link-footer:focus {
